@@ -1,0 +1,87 @@
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+.container{
+  position: relative;
+}
+
+.container .slide-container .slide{
+  min-height: 100vh;
+  position:relative;
+  overflow: hidden;
+}
+
+.container .slide-container .slide video{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  z-index: -1;
+  animation:fadeIn .4s linear;
+}
+
+@keyframes fadeIn{
+  0%{
+    transform:scale(1.5);
+
+  }
+}
+
+.container .slide-container .slide .content{
+  min-height: 100vh;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.container .slide-container .slide .content h3{
+  font-family: 'Brush Script MT', Brush Script Std, cursive;
+  font-size: 5rem;
+  text-transform: none;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0,0,0,.3);
+  animation:animate .4s linear .4s backwards;
+}
+
+.container .slide-container .slide .content p{
+  font-size: 15px;
+  color: #eee;
+  padding: 5px 0;
+  font-weight: lighter;
+  text-shadow: 0 5px 10px rgba(0,0,0,.3);
+  max-width: 700px;
+  animation:animate .4s linear .6s backwards;
+}
+
+ .btn{
+  display: inline-block;
+  padding: 9px 30px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  color: #333;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+  transition: .2s linear;
+  animation:animate .4s linear 1.2s backwards;
+}
+@keyframes animate{
+  0%{opacity: 0;
+    tranform:scale(.5) translateY(-50px);}
+}
+
+
+.btn:hover{
+  letter-spacing: 10px;}

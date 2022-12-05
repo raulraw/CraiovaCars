@@ -1,0 +1,499 @@
+.section{
+  margin:0;
+  padding: 0;
+  height: 100vh;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-carusel{
+  display: grid;
+    place-items: center;
+    -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 20px 5px
+}
+.carousel {
+  width: 35vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  cursor: pointer;
+  border-radius: .2rem;
+  padding: 0  .9rem;
+  background-color: black;
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: red;
+  background-color: black;
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+
+}
+.box-carusel .carousel:hover .content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+
+
+.box-carusel .carousel .content {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  padding: 2rem;
+  -webkit-transform: translateY(6.5rem);
+          transform: translateY(6.5rem);
+}
+
+.box-carusel .carousel .content span {
+  font-size: 1.5rem;
+  color: #f00;
+}
+
+.box-carusel .carousel .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
+.box-carusel .carousel .content .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+
+.box-carusel .carousel .content .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.box-carusel .carousel .content .share a:hover {
+  color: #f00;
+}
+
+.box-carusel .carousel:hover .content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+
+
+.box-carusel .carousel .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  padding: 2rem;
+  -webkit-transform: translateY(6.5rem);
+          transform: translateY(6.5rem);
+}
+
+.box-carusel .carousel .content span {
+  font-size: 1.5rem;
+  color: #f00;
+}
+
+.box-carusel .carousel .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+.box-carusel .carousel .content .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+
+.box-carusel .carousel .content .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.box-carusel .carousel .content .share a:hover {
+  color: #f00;
+}
+
+/*.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+/*.next {
+  right: 0;
+    background-color: black;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+/*.prev {
+  left: 0;
+  background-color: black;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/*.prev:hover, .next:hover {
+  background-color: transparent;
+}
+ /*.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideInRight ease 1s;
+}
+
+  @keyframes slideInRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+ .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+    margin-top: 75px;
+    align-content: center;
+    text-align: center;
+
+}
+.element {
+    display: grid;
+    grid-template-areas: "dsc lgo" "ttl lgo";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    position: center;
+}
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+ .slideshow-container {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+}
+
+/* Hide the images by default */
+/*.mySlides {
+  display: none;
+ position:center;
+
+}
+.mySlides img{
+  width: 800px;
+  height:500px;
+}
+
+/* Next & previous buttons */
+/*.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+/*.next {
+  right: 0;
+    background-color: black;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+/*.prev {
+  left: 0;
+  background-color: black;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/*.prev:hover, .next:hover {
+  background-color: transparent;
+}
+
+/* Caption text */
+/*.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(26, 26, 26, 0.6);
+  margin-bottom: 20px;
+
+}
+.slideshow-container .mySlides .content{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: #111;
+padding: 0.1rem;
+-webkit-transform: translateY(-0.3rem);
+        transform: translateY(-0.3rem);
+}
+
+
+.slideshow-container .mySlides  .content span {
+font-size: 1.5rem;
+color: #f00;
+}
+
+.slideshow-container .mySlides .content h3 {
+font-size: 2rem;
+color: red;
+padding-top: .5rem;
+}
+
+.slideshow-container .mySlides .content .share {
+padding-top: 2rem;
+margin-top: 1.5rem;
+border-top: 0.1rem solid #aaa;
+}
+
+.slideshow-container .mySlides  .content .share a {
+font-size: 2rem;
+color: #fff;
+margin-right: 1.5rem;
+}
+
+.slideshow-container .mySlides .content .share a:hover {
+color: #f00;
+}
+
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Sliding animation */
+/*.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*.section{
+  margin:0;
+  padding: 0;
+  height: 100vh;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider{
+  width: 30%;
+  height: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px;
+
+}
+.slide{
+  width: auto;
+  height:500px;
+  display: flex;
+
+}
+.slide input {
+  display: none;
+}
+
+.st{
+  width:80%;
+  transition: 2s;
+}
+
+.st img{
+  width: 800px;
+  height: 500px;
+}
+
+.nav-m{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+}
+
+.m-btn{
+  border: 2px solid #23e3c2;
+  padding: 5px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 1s;
+    margin-top:38rem;
+}
+.m-btn:not(:last-child){
+  margin-right: 30px;
+}
+.m-btn:hover{
+  background-color: #23e3c2;
+}
+#radio1:checked ~.first{
+  margin-left:0;
+}
+#radio2:checked ~.first{
+  margin-left: -20%;
+}
+#radio3:checked ~.first{
+  margin-left: =40%;
+}
+#radio4:checked ~.first{
+  margin-left: -60%;
+}
+.nav-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+.nav-auto div{
+  border: 2px solid #23e3c2;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.nav-auto div:not(:last-child){
+  margin-right: 30px;
+  justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+  background-color: #23e3c2;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+  background-color: #23e3c2;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+  background-color: #23e3c2;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+  background-color: #23e3c2;
+}
+*/
