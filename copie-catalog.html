@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" integrity="sha512-Jp3oCtkKo8j/WRrHq2jrYMtJogclQybtR6+81arCLTO/TvWj3oaF4NkZQs2bTqWJ8An8L2MLKKfvsn3H8vZP1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css" integrity="sha512-13RM4Q4wPLiDEFNxKQbZMoyM3qR3eIsTYoXy6hJlqWmPzFCBLyxG3LGx/48N+sTcLxvN3IoThkZYxo3yuaGSvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Responsive car website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+
+
+
+         <!--header section-->
+    <header class="header">
+        <a href="index.html" class="logo"><span>Craiova's </span>Cars</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="acasa.html">Acasa</a>
+            <a href="despre.html">Despre Noi</a>
+            <a href="catalog.html">Colectia de masini</a>
+            <a href="cars&coffee.html">Cars&Coffee</a>
+            <a href="faq.html">Reguli&FAQ</a>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+    <!--home section starts-->
+
+    <section class="hometop" id="hometop">
+
+        <div class="content">
+            <h3>adventure is worthwile</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 23, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED EVENT";
+  }
+}, 1000);
+</script>
+        </div>
+
+
+
+        <div class="video-container">
+            <video autoplay loop muted playsinline src="video/video-1.MOV" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+
+
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+                <h2 class="section__title">
+                    Featured Lux Cars 
+                </h2>
+                <div class="popular__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porche</h1>
+                            <h3 class="popular__subtitle">Turbo S</h3>
+
+                            <img src="images/about1.jpeg" alt="" class="popular__img">
+                            <img src="images/about2.jpg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 line
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 km
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>Electric
+                                </div>
+                            </div>
+
+                          <h3 class="popular__price">175.000$</h3>
+                          
+                          <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                          </button>
+                        </article>
+
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porche</h1>
+                            <h3 class="popular__subtitle">Taycan</h3>
+
+                            <img src="images/about21.jpg" alt="" class="popular__img">
+                            <img src="images/saptamana_31.jpg" alt="" class="popular__img">
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 line
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 km
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>Electric
+                                </div>
+                            </div>
+
+                          <h3 class="popular__price">150.000</h3>
+                          
+                          <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                          </button>
+                        </article>
+
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porche</h1>
+                            <h3 class="popular__subtitle">Turbo S Cross</h3>
+
+                            <img src="images/about41.jpeg" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 line
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 km
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>Electric
+                                </div>
+                            </div>
+
+                          <h3 class="popular__price">180.000</h3>
+                          
+                          <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                          </button>
+                        </article>
+
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+
+             <!-- carousel section starts-->
+
+             <!--==================== LOGOS ====================-->
+                    <section class="logos section">
+                      <h1 class="heading"> <span>Firme</span> </h1>
+
+                        <div class="logos__container container grid">
+                            <div class="logos__content">
+                                <img src="images/logo-porsche.png" alt="" class="logos__img">
+                            </div>
+
+                            <div class="logos__content">
+                                <img src="images/logo-audi.png" alt="" class="logos__img">
+                            </div>
+
+                            <div class="logos__content">
+                                <img src="images/logo-mert.png" alt="" class="logos__img">
+                            </div>
+
+                            <div class="logos__content">
+                                <img src="images/logo-lambo.png" alt="" class="logos__img">
+                            </div>
+
+                            <div class="logos__content">
+                                <img src="images/logo-bmw.png" alt="" class="logos__img">
+                            </div>
+
+                            <div class="logos__content">
+                                <img src="images/logo-seat.png" alt="" class="logos__img">
+                            </div>
+
+                             <div class="logos__content">
+                                <img src="images/logo-bentley.png" alt="" class="logos__img">
+                            </div>
+                             <div class="logos__content">
+                                <img src="images/logo-vw.png" alt="" class="logos__img">
+                            </div>
+                             <div class="logos__content">
+                                <img src="images/logo-ferrari.png" alt="" class="logos__img" style="height: 45px; width: 40px;">
+                            </div>
+                             <div class="logos__content">
+                                <img src="images/logo-dodge.png" alt="" class="logos__img" style="height: 55px; width: 55px;">
+                            </div>
+
+                             <div class="logos__content">
+                                <img src="images/logo-nissan.png" alt="" class="logos__img" style="height: 55px; width: 55px;">
+                            </div>
+                             <div class="logos__content">
+                                <img src="images/logo-mclaren.png" alt="" class="logos__img" style="height: 120px; width: 80px;">
+                            </div>
+
+
+
+                        </div>
+                    </section>
+
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+       <!-- footer section starts-->
+
+       <section class="footer">
+
+        <div class="footer">
+      
+          <div class="box-container">
+      
+            <div class="box">
+              <h3><i class="fa fa-envelope"></i> Emails</h3>
+              <p>raul_valentin123@yahoo.com</p>
+              <p>veleanubiancamihaela@yahoo.com</p>
+            </div>
+      
+            <div class="box">
+              <h3><i class="fa fa-map-marker-alt"></i>  Locatia Noastra</h3>
+              <p>Craiova, Romania - 200068</p>
+            </div>
+      
+            <div class="box">
+              <h3><i class="fa fa-phone"></i> Contact</h3>
+              <p>Trimite-ne un mesaj si iti vom raspunde in cel mai scurt timp posibil ! </p>
+            </div>
+      
+          </div>
+      </section>
+      
+      <div class="credit"> Created 2023 by <span class="colorchange">Raul.Raw</span> & <span class="colorchange">Bianca.Veleanu</span> | All rights reserved !
+      </div>
+
+
+
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP JS ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+  
+
+
+    </body>
+</html>

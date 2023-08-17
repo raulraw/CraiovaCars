@@ -50,32 +50,43 @@
   font-family: 'Brush Script MT', Brush Script Std, cursive;
   font-size: 5rem;
   text-transform: none;
-  color: #fff;
+  color: rgb(125, 0, 0);
   text-shadow: 0 5px 10px rgba(0,0,0,.3);
   animation:animate .4s linear .4s backwards;
+  margin-bottom: 30px;
 }
 
 .container .slide-container .slide .content p{
   font-size: 15px;
-  color: #eee;
+  color: #696969;
   padding: 5px 0;
-  font-weight: lighter;
+  font-weight: 1000;
   text-shadow: 0 5px 10px rgba(0,0,0,.3);
   max-width: 700px;
   animation:animate .4s linear .6s backwards;
+  margin-bottom: 15px;
 }
 
  .btn{
   display: inline-block;
   padding: 9px 30px;
-  background: #fff;
+  background: #696969;
   box-shadow: 0 5px 10px rgba(0,0,0,.3);
-  color: #333;
+  color:white;
+  transition: background-color 1s;
   font-weight: bold;
   font-size: 17px;
   margin-top: 10px;
   transition: .2s linear;
   animation:animate .4s linear 1.2s backwards;
+}
+.btn:hover{
+background-color: rgb(125, 0, 0);
+transition: background-color 1.5s;
+transition: .2s linear;
+animation:animate .4s linear 1.2s backwards;
+color: black;
+font-weight:700;
 }
 @keyframes animate{
   0%{opacity: 0;
@@ -85,3 +96,48 @@
 
 .btn:hover{
   letter-spacing: 10px;}
+
+  @media (max-width: 450px){
+    .container .slide-container .slide .content h3{
+      font-family: 'Brush Script MT', Brush Script Std, cursive;
+      font-size: 3.5rem;
+      text-transform: none;
+      color: red;
+      text-shadow: 0 5px 10px rgba(0,0,0,.3);
+      animation:animate .4s linear .4s backwards;
+      margin-bottom: 15px;
+    }
+    
+    .container .slide-container .slide .content p{
+      font-size: 12px;
+      color: #eee;
+      padding: 5px 0;
+      font-weight: 1000;
+      text-shadow: 0 5px 10px rgba(0,0,0,.3);
+      max-width: 700px;
+      animation:animate .4s linear .6s backwards;
+      margin-bottom: 15px;
+    }
+    
+     .btn{
+      display: inline-block;
+      padding: 9px 30px;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(0,0,0,.3);
+      color: #333;
+      transition: background-color 1s;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 20px;
+      transition: .2s linear;
+      animation:animate .4s linear 1.2s backwards;
+    }
+    .btn:hover{
+    background-color: red;
+    transition: background-color 1.5s;
+    transition: .2s linear;
+    animation:animate .4s linear 1.2s backwards;
+    color: white;
+    font-weight:700;
+    }
+  }

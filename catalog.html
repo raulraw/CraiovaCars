@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" integrity="sha512-Jp3oCtkKo8j/WRrHq2jrYMtJogclQybtR6+81arCLTO/TvWj3oaF4NkZQs2bTqWJ8An8L2MLKKfvsn3H8vZP1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.min.css" integrity="sha512-13RM4Q4wPLiDEFNxKQbZMoyM3qR3eIsTYoXy6hJlqWmPzFCBLyxG3LGx/48N+sTcLxvN3IoThkZYxo3yuaGSvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Responsive car website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+
+
+
+         <!--header section-->
+    <header class="header">
+        <a href="index.html" class="logo"><span>Craiova's </span>Cars</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="acasa.html">Acasa</a>
+            <a href="despre.html">Despre Noi</a>
+            <a href="catalog.html">Colectia de masini</a>
+            <a href="cars&coffee.html">Cars&Coffee</a>
+            <a href="faq.html">Reguli&FAQ</a>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+    <!--home section starts-->
+
+    <section class="hometop" id="hometop">
+
+        <div class="content">
+            <h3>Collection of cars</h3>
+            <p>Coming soon...</p>
+            <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 24, 2023 20:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED EVENT";
+  }
+}, 1000);
+</script>
+        </div>
+
+
+
+        <div class="video-container">
+            <video autoplay loop muted playsinline src="video/video-1.MOV" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+
+
+        <!--==================== FOOTER ====================-->
+       <!-- footer section starts-->
+
+    
+     
+
+
+
+
+        <!--========== SCROLL UP ==========-->
+
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP JS ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+
+
+    </body>
+</html>

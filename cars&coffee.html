@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craiova's Cars</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+  
+
+</head>
+<body>
+
+  <!-- header section starts      -->
+
+  <header class="header">
+    <a href="index.html" class="logo"><span>Craiova's </span>Cars</a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <a href="acasa.html">Acasa</a>
+      <a href="despre.html">Despre noi</a>
+      <a href="catalog.html">Colectia de masini</a>
+      <a href="cars&coffee.html">Cars&Coffee</a>
+      <a href="faq.html">Reguli&FAQ</a>
+
+    </nav>
+
+  </header>
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide" style="background: url(images/coperta-cars&coffee1.jpg) no-repeat;">
+            <div class="content">
+                        <span>Best quote #2</span>
+                        <h3>"Filling my empty tank feels like filling my empty soul"</h3>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- home section ends  -->
+
+  <!-- header section ends     -->
+
+  <!-- home section starts  -->
+
+  <!-- <section class="home" id="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide" style="background: url(images/aboutbg.jpg) no-repeat;">
+          <div class="content">
+                      <span>Best quote</span>
+                      <h3>"If you're in control, you're not going fast enough"</h3>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        home section ends  --><br><br><br><br><br><br><br>
+        <h1 class="heading"> <span>Locatii de intalnire</span> </h1>
+
+
+
+  <section class="locations">
+  
+  <figure class="snip1141"><img src="images/omv_statie.jpeg" alt="sq-sample27" />
+    <figcaption>
+      <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+      <h2>OMV Calea Bucuresti</h2>
+    </figcaption>
+    <a href="#"></a>
+  </figure>
+  <figure class="snip1141"><img src="images/poza-carcea.png" alt="sq-sample27" />
+    <figcaption>
+      <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+      <h2>Parcare Carcea</h2>
+    </figcaption>
+    <a href="#"></a>
+  </figure>
+  <figure class="snip1141"><img src="images/poza-mat.jpeg" alt="sq-sample17" />
+    <figcaption>
+      <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+      <h2>Parcare MAT</h2>
+    </figcaption>
+    <a href="#"></a>
+  </figure>
+</section>
+
+<h1 class="heading"> <span>Programul de weekend</span> </h1>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 24, 2023 20:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED EVENT";
+  }
+}, 1000);
+</script>
+
+
+
+<section class="timeline">
+  
+  <div class="timeline__component">
+    <div class="timeline__date timeline__date--right">Joi</div>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+    <h2 class="timeline__title">Parcare Mat</h2>
+    <p class="timeline__paragraph">
+      Va asteptam in numar cat mai mare saptamanal, in fiecare joi, la un Meet unde pasiunea ne uneste !
+    </p>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+    <h2 class="timeline__title">Parcare Carcea</h2>
+    <p class="timeline__paragraph">
+      In fiecare vineri va invitam alaturi de noi in parcarea de la carcea unde putem discuta si admira deschis fiecare masinuta prezenta la Meet !
+    </p>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component">
+    <div class="timeline__date">Vineri</div>
+  </div>
+  <div class="timeline__component">
+    <div class="timeline__date timeline__date--right">Sambata</div>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+    <h2 class="timeline__title">OMV Calea Bucuresti</h2>
+    <p class="timeline__paragraph">
+      Ziua de sambata este zi de weekend, zi de relax, asa ca va invitam la OMV Calea Bucuresti !
+    </p>
+  </div>
+  <div class="timeline__component timeline__component--bottom timeline__component--bg">
+    <h2 class="timeline__title">Calea Bucuresti</h2>
+    <p class="timeline__paragraph">
+      Restul zilelor sunt de odihna si tranzit, pastram combustibilul pana la urmatoarele Meet-uri, ne revedem in forta !
+    </p>
+    <p class="timeline__paragraph">
+      
+    </p>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+    <div class="timeline__point timeline__point--bottom"></div>
+  </div>
+  <div class="timeline__component timeline__component--bottom">
+    <div class="timeline__date">Duminica-Miercuri</div>
+  </div>
+</section>
+
+
+
+<section class="maps">
+ 
+  
+  <h1 class="heading"> <span>Google Maps</span> </h1>
+  <div class="row">
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.8043403883325!2d23.828318275797255!3d44.31397270944496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d6ff15ed74d5%3A0x1aba128af92c54d2!2sOMV!5e0!3m2!1sro!2sro!4v1690375842393!5m2!1sro!2sro" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5711.040066328479!2d23.9145063!3d44.2992587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d5fa5965e06d%3A0xa7951b737117fe34!2sParking%20centura%20de%20sud%20Craiova!5e0!3m2!1sro!2sro!4v1690908325442!5m2!1sro!2sro" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.362075626135!2d23.832582100000003!3d44.3025065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d65accde4fa3%3A0x72933842ba89f5dc!2sBulevardul%20Decebal%20118%2C%20Craiova!5e0!3m2!1sro!2sro!4v1690975994529!5m2!1sro!2sro" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+
+
+
+
+  <!--footer section starts-->
+
+
+  <section class="footer">
+
+    <div class="footer">
+  
+      <div class="box-container">
+  
+        <div class="box">
+          <h3><i class="fa fa-envelope"></i> Emails</h3>
+          <p>raul_valentin123@yahoo.com</p>
+          <p>veleanubiancamihaela@yahoo.com</p>
+        </div>
+  
+        <div class="box">
+          <h3><i class="fa fa-map-marker-alt"></i>  Locatia Noastra</h3>
+          <p>Craiova, Romania - 200068</p>
+        </div>
+  
+        <div class="box">
+          <h3><i class="fa fa-phone"></i> Contact</h3>
+          <p>Trimite-ne un mesaj si iti vom raspunde in cel mai scurt timp posibil ! </p>
+        </div>
+  
+      </div>
+  </section>
+  
+  <div class="credit"> Created 2023 by <span class="colorchange">Raul.Raw</span> & <span class="colorchange">Bianca.Veleanu</span> | All rights reserved !
+  </div>
+
+<!--footer section ends-->
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+  </body>
+  </html>
